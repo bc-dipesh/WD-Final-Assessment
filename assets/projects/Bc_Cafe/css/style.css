@@ -1,0 +1,483 @@
+/*Universal*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+/*header */
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/bake-baked-bakery-1028714.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto; /*for centering the logo*/
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;/* to list in line*/
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+li{
+    padding: 5px 0px;
+}
+
+#current{
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation: colorchangeBC 1s infinite;
+}
+
+@keyframes colorchangeBC{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: #fff;}
+    100%{color: #bf55ec;}
+}
+
+.mobile-icon{ display:none; }
+
+/*cake gallery*/
+.container
+{
+    width: 1180px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -55%);
+}
+
+.container .box{
+    position: relative;
+    width: 215px;
+    height: 200px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img
+{
+    transform: scale(1.2);
+}
+
+.container .box .details{
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+.container .box .details .content{
+    position: absolute;
+    top: 10%;
+    left: -15%;
+    transform: translate(15%);
+    text-align: center;
+    color: #fff;
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/*login and signup */
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.button{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+
+.button:hover{
+    background-color: #bf55ec;
+}
+
+/*contact us*/
+
+.subscribe-box{
+    width: 280px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-100%);
+    color: #fff;
+}
+
+.subscribe-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 4px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.button{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+
+.button:hover{
+    background-color: #bf55ec;
+}
+
+/*contact icons*/
+.social{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-55%, -55%);
+}
+
+.social img{
+    height: 30px;
+    width: 25px;
+    opacity: 0.3;
+}
+.social li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.social li a{
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.social li a:hover{
+    border: none;
+}
+
+.social li a img:hover{
+    transform: scale(2, 2);
+    transition: all ease-in 2s;
+}
+
+.social ul{
+    float: left;
+}
+
+/*Article about us*/
+article#About{
+    width: 380px;
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    transform: translate(-100%);
+    color: #fff;
+    text-align: center;
+}
+
+/*video background*/
+.background-wrap
+{
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#video-bg-elem{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+/*order placement guide*/
+article#order{
+    width: 380px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+#map{
+    width: 380px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(100%);
+}
+
+.order-box{
+    width: 280px;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(100%);
+    color: #fff;
+}
+
+.order-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+/*Footer*/
+footer{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(100%, 100%);
+    
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0px 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{ font-size: 200%; }
+}
+
+@media only screen and (max-width: 768px){
+    h1{ font-size: 180%; }
+    .main-nav { display: none;}
+    .mobile-icon{ 
+    display: inline-block;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    }
+
+    .main-nav{
+        float: left;
+    }
+
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px)
+{
+    .btn-full{
+        margin-bottom: 20px;
+    }
+
+    h1{ font-size: 160%;}
+}

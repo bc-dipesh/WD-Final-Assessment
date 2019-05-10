@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "Author" content = "Dipesh Bc">
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+            <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src = "script.js"></script>
+            <title>BC Cafe | Sign In</title>
+        </head>
+
+    <body>
+
+        <header>
+                <nav>
+                    <div class = "row clearfix">
+                        <a href = "index.html" target = "_blank"><img src = "images/logo.jpg" class = "logo" style = "opacity: 0.3;"></a>
+
+                            <ul class = "main-nav animated slideInDown" id = "check-class">
+                            <li><a href = "index.html">HOME</a></li>
+                            <li id = "current"><a href = "login.html">SIGN IN</a></li>
+                            <li><a href = "cakegallery.html">CAKE GALLERY</a></li>
+                            <li><a href = "howtoorder.html">HOW TO ORDER</a></li>
+                            <li><a href = "contact.html">CONTACT US</a></li>
+                        </ul>
+                        <a href = "#" class = "mobile-icon"  onclick = "slideshow()"><i class="fa fa-bars"></i></a>
+                    </div>
+                </nav>   
+            </header>
+
+        <!--Login-->
+        <section>
+            <form name="Login" action="#" enctype="multipart/form-data" method="GET">
+     <div class="login-box animated bounceInDown" id = "check-class">
+        <h1>Sign In</h1>
+         <div class = "textbox">
+             <i class="fa fa-user"></i>
+        <input type = "text" placeholder = "Username" minlength = "5" id = "user">
+      </div>
+
+         <div class = "textbox">
+             <i class="fa fa-lock"></i>
+        <input type = "password" placeholder = "Password" minlength = "5" id = "pass">
+      </div>
+
+         <input class = "button" type = "button" value = "Sign in" onclick = "return frmValidate()">
+    </div>
+            </form>
+      </section>
+
+        <article id = "About">
+            <h1>About Us</h1>
+            <p id = "Aboutus">BC Cake shop is a sweet local family owned<br>bakery located in Baneshwor, Kathmandu. We<br>pride ourselves with delivering the sweetest<br>treats and cakes to you!</p>
+            <br>
+            <p id = "Aboutus">All of our cakes and treats are made fresh<br>from scratch with every order. Nothing is<br>ever frozen and we use all natural<br>ingredients. Great care is taken with each<br>and every order, and decorated to impress.</p>
+            <br>
+            <p>We strive to set new trends and are<br>constantly inspired by our customer's<br>creativity! Combining our good ol' fashioned<br>scratch baking with fresh ideas push us into<br>creative unchartered cake decorating territory.<br></p>
+            <p>We promise to leave you satisfied and full of<br>happiness with every bite!</p>
+        </article>
+
+        <footer>
+                <span class = "colorchange"><p>&copy;2018, bcdipesh.ga</p></span>
+            </footer>
+
+        </body>
+    </html>

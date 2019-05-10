@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "Author" content = "Dipesh Bc">
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+            <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src = "script.js"></script>
+            <title>BC Cafe | How to order</title>
+        </head>
+    <body>
+        
+        <div class = "background-wrap">
+        <video id = "video-bg-elem" preload = "auto" autoplay = "true" loop = "loop" muted = "muted">
+            <source src = "video/(3)%20Brunei%20Cinematic%20Cake%20Advertisement%20-%20YouTube.MP4" type = "video/mp4">
+            </video>
+        </div>
+    
+        <header style = "background-image:none;">
+                <nav>
+                    <div class = "row clearfix">
+                        <a href = "index.html" target = "_blank"><img src = "images/logo.jpg" class = "logo" style = "opacity: 0.3;"></a>
+
+                            <ul class = "main-nav animated slideInDown" id = "check-class">
+                            <li><a href = "index.html">HOME</a></li>
+                            <li><a href = "login.html">SIGN IN</a></li>
+                            <li><a href = "cakegallery.html">CAKE GALLERY</a></li>
+                            <li id = "current"><a href = "howtoorder.html">HOW TO ORDER</a></li>
+                            <li><a href = "contact.html">CONTACT US</a></li>
+                        </ul>
+                        <a href = "#" class = "mobile-icon"  onclick = "slideshow()"><i class="fa fa-bars"></i></a>
+                    </div>
+                </nav>   
+            </header>
+
+        <article id = "order">
+            <h1>Order Placement</h1>
+            <p>You can place your order by online<br>or,<br>by comming to our shop situated at Baneshwor, Kathmandu</p>
+            <br>
+            <a href = "contact.html" target = "_blank" class = "btn btn-full">click here to know our location</a>
+        </article>  
+        
+        <section>
+            <form name="Order" action="#" enctype="multipart/form-data" method="GET">
+                 <div class = "order-box animated bounceInDown" id = "check-class">
+                     <div class = "textbox">
+                         <i class="fa fa-user"></i>
+                    <input type = "text" placeholder = "Name" id = "name">
+                  </div>
+
+                     <div class = "textbox">
+                         <i class="fa fa-envelope-o"></i>
+                    <input type = "email" placeholder = "Email" id = "email">
+                  </div>
+                     <div class = "textbox">
+                          <i class="fa fa-map-marker"></i>
+                          <label>Your location</label>
+                    <select id="country" name="country" style = "border:1px solid #fff;background-color:rgba(255,255,255,0.5);padding:5px;">
+                      <option value="Nepal">Nepal</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                     </div>
+                      <input class = "button" type = "button" value = "Order" onclick = "return myFunction()">
+                           </div>
+            </form>
+                  </section>
+
+        <footer>
+                <span class = "colorchange"><p>&copy;2018, bcdipesh.ga</p></span>
+            </footer>
+        
+        </body>
+    </html>

@@ -1,0 +1,86 @@
+                <!DOCTYPE html>
+                <html lang = "en">
+                    <head>
+                        <meta charset = "UTF-8">
+                        <meta name = "Author" content = "Dipesh Bc">
+                        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+                        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+                        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                        <script src = "script.js"></script>
+                        <title>BC Cafe | Contact</title>
+                    </head>
+
+                <body>
+
+                    <header>
+                            <nav>
+                                <div class = "row clearfix">
+                                    <a href = "index.html" target = "_blank"><img src = "images/logo.jpg" class = "logo" style = "opacity: 0.3;"></a>
+
+                                        <ul class = "main-nav animated slideInDown" id = "check-class">
+                                        <li><a href = "index.html">HOME</a></li>
+                                        <li><a href = "login.html">SIGN IN</a></li>
+                                        <li><a href = "cakegallery.html">CAKE GALLERY</a></li>
+                                        <li><a href = "howtoorder.html">HOW TO ORDER</a></li>
+                                        <li id = "current"><a href = "contact.html">CONTACT US</a></li>
+                                    </ul>
+                                    <a href = "#" class = "mobile-icon"  onclick = "slideshow()"><i class="fa fa-bars"></i></a>
+                                </div>
+                            </nav>   
+                        </header>
+
+                    <!--Contact us form-->
+                       <section>
+                           <form name="contact" action="#" enctype="multipart/form-data" method = "GET">
+                 <div class="subscribe-box animated bounceInDown" id = "check-class">
+                    <h1>Come by for a taste or leave us a message</h1>
+                     <div class = "textbox">
+                         <i class="fa fa-user"></i>
+                    <input type = "text" placeholder = "Name" id = "name">
+                  </div>
+
+                     <div class = "textbox">
+                         <i class="fa fa-envelope-o"></i>
+                    <input type = "email" placeholder = "Email" id = "email">
+                  </div>
+                     <div class = "textbox">
+                          <i class="fa fa-map-marker"></i>
+                    <select id="country" name="country" style = "border:1px solid #fff;background-color:rgba(255,255,255,0.5);padding:5px;">
+                      <option value="Nepal">Nepal</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                          <input type = "textarea" placeholder = "Leave us a message" style = "margin-top:5px;">
+                     </div>
+                     <input class = "button" type = "submit" value = "Sign in" onclick = "return myFunction()">
+                </div>
+                           </form>
+                  </section>
+                    
+                    <section>
+                    <div class = "social">
+                        <h1>Find us on social networks</h1>
+                        <ul class = "main-nav animated slideInDown" id = "check-class">
+                            <li><a href = "https://www.facebook.com/dipesh.budhachettri" target = "_blank"><img src = "Icons/facebook.jpg"></a></li>
+                            <li><a href = "https://plus.google.com/u/0/103855641684001357191" target = "_blank"><img src = "Icons/googleplus.jpg"></a></li>
+                            <li><a href = "https://www.instagram.com/dipesh_budhachettri/" target = "_blank"><img src = "Icons/instagram.jpg"></a></li>
+                            <li><a href = "https://twitter.com/login" target = "_blank"><img src = "Icons/twitter.jpg"></a></li>
+                        </ul>
+                        </div>
+                    </section>
+                    
+                   <!--Google Map-->
+                    <section>
+                    <div id="map" style="width:400px;height:400px;background:yellow"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-AOlk7UNu6CZYnQDGKSdmZ7kwNKeumI0&callback=myMap"></script>
+           </section>
+                    
+                    <footer>
+               <span class = "colorchange"><p>&copy;2018, bcdipesh.ga</p></span>
+            </footer>
+                    
+                    </body>
+                </html>
