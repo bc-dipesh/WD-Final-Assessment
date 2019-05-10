@@ -1,1 +1,1 @@
-This is an empty folder.
+Pleaser consider opening Lab_exercises folder.
