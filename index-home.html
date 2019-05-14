@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a page about me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height" />
+    <meta name="description" content="This is the landing page of my portfolio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--Import font awesome fonts-->
     <link
@@ -14,11 +14,20 @@
     />
     <!--CSS File-->
     <link rel="stylesheet" href="assets/styles/style.css" type="text/css" />
-    <title>About Me</title>
+    <title>Welcome To My Portfolio</title>
   </head>
 
   <body id="bg-img" class="animated fadeInDown">
-    <!-- Navigation Menu -->
+    <!--Animated Loading Screen-->
+    <div class="welcome">
+      <h1 class="heading">Dipesh <span class="text-secondary">Bc</span></h1>
+      <h3 class="sub-heading">Future Software Developer</h3>
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <!--Navigation Menu-->
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -31,13 +40,13 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="index-home.html" class="nav-link">
               Home
             </a>
           </li>
 
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="about.html" class="nav-link">
               About Me
             </a>
@@ -50,10 +59,10 @@
           </li>
 
           <li class="nav-item">
-            <a href="Blog.html.html" class="nav-link">
-              Blog
-            </a>
-          </li>
+              <a href="Blog.html" class="nav-link">
+                Blog
+              </a>
+            </li>
 
           <li class="nav-item">
             <a href="contact.html" class="nav-link">
@@ -65,24 +74,27 @@
     </header>
 
     <!--Main Article-->
-    <main id="about">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+    <main id="home">
+      <h1 class="lg-heading">Dipesh <span class="text-secondary">Bc</span></h1>
       <h2 class="sm-heading">
-        Let me tell you a few things...
+        Bsc(Hons)Computing student at The British College, Thapathali, Kathmandu
       </h2>
+      <div class="icons">
+        <a href="#!">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
 
-      <div class="about-me">
-        <img
-          src="assets/images/portrait.png"
-          alt="Dipesh Bc"
-          class="bio-image"
-        />
-        <div class="bio">
-          <h3 class="text-secondary">BIO</h3>
-          <div class="output" id="output">
-            <p class="cursor"></p>
-          </div>
-        </div>
+        <a href="https://www.instagram.com/dipesh_budhachettri/" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/dipesh-bc-412940161/" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+
+        <a href="https://github.com/bc-dipesh" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
       </div>
     </main>
 
