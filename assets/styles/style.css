@@ -109,7 +109,7 @@
   justify-content: center;
   float: left;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -236,6 +236,7 @@ body#bg-img {
   background-image: url("../images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 body#bg-img::after {
@@ -715,7 +716,10 @@ address {
 
 @media screen and (max-width: 1285px) {
   .project-lists {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-posts {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -797,10 +801,13 @@ address {
   .project-lists {
     grid-template-columns: 1fr;
   }
+  .project-lists .container {
+    max-width: calc(100vw - 4rem);
+  }
   .blog-posts {
     grid-template-columns: 1fr;
   }
-  .card {
+  .card-grid-space, .card {
     max-width: calc(100vw - 4rem);
   }
   .boxes div {
