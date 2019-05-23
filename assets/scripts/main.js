@@ -1,6 +1,6 @@
 //Script for loading screen
 var loc = location.href;
-if (loc.includes("index.html")) {
+if (loc.includes("index-home.html")) {
   document.addEventListener("DOMContentLoaded", () => {
     // Wrapper animation
     anime
